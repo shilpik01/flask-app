@@ -27,7 +27,7 @@ This project demonstrates how to deploy a simple web application using Docker co
          app.run(host='0.0.0.0', port=5000)
 
 
-2. **Create a requirements file:
+2. Create a requirements file:
 
    - Create a file named requirements.txt and add:
 
