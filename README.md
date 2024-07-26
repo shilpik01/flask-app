@@ -40,7 +40,7 @@ This project demonstrates how to deploy a simple web application using Docker co
 
 5. Run Docker Container
 
-        docker run -p 5001:5000 flask_student_app
+        docker run -d -p 5001:5000 flask_student_app
 
 6. The application will be accessible at http://localhost:5001/students.
    ![B28A1CBD-FD22-4382-84B2-796B0F6BBEFE_4_5005_c](https://github.com/user-attachments/assets/e2a6b4c7-932c-4eb6-b1ad-1462bc59e8e3)
@@ -54,6 +54,7 @@ Request Body: JSON with roll_number and name
     "roll_number": "10",
     "name": "Rahul Sen"
     }
+   
 8. Get All Students
 URL: http://localhost:5001/students
 Method: GET
@@ -67,7 +68,7 @@ flask_student_app/
     ├── Dockerfile     # Docker configuration file
     └── README.md      # Project documentation
 
-8. Author
+10. Author
     Roll No: G23AI2027
     
 
