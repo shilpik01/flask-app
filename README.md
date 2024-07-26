@@ -1,4 +1,3 @@
-![B28A1CBD-FD22-4382-84B2-796B0F6BBEFE_4_5005_c](https://github.com/user-attachments/assets/ae4a1b13-057c-4b68-92ad-b1a55aceb78f)
 # VCC_Assignment: Sample Web Application Deployment using Docker
 
 ## Overview
