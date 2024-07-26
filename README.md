@@ -7,7 +7,7 @@ This project demonstrates how to deploy a simple web application using Docker co
 ## Steps Followed
 
 1. **Create a Sample Web Application**:
-   - Developed a simple Flask application to save Student roll number and Student name in docker.
+   - Developed a simple Flask application to save Student roll number and Student name in docker. Create a file named app.py.
 
          from flask import Flask, request, jsonify
          app = Flask(__name__)
@@ -27,18 +27,24 @@ This project demonstrates how to deploy a simple web application using Docker co
          app.run(host='0.0.0.0', port=5000)
 
 
-2. Building the Docker image
+2. **Create a requirements file:
+
+   - Create a file named requirements.txt and add:
+
+           Flask==2.1.1
+
+4. Building the Docker image
 
         docker build -t flask_student_app .
 
-3. Run Docker Container
+5. Run Docker Container
 
         docker run -p 5001:5000 flask_student_app
 
-4. The application will be accessible at http://localhost:5001/students.
+6. The application will be accessible at http://localhost:5001/students.
    ![B28A1CBD-FD22-4382-84B2-796B0F6BBEFE_4_5005_c](https://github.com/user-attachments/assets/e2a6b4c7-932c-4eb6-b1ad-1462bc59e8e3)
 
-5. Add a Student
+7. Add a Student
 URL: http://localhost:5001/add_student
 Method: POST
 Request Body: JSON with roll_number and name
@@ -47,11 +53,11 @@ Request Body: JSON with roll_number and name
     "roll_number": "10",
     "name": "Rahul Sen"
     }
-6. Get All Students
+8. Get All Students
 URL: http://localhost:5001/students
 Method: GET
 
-7. Project structure
+9. Project structure
 
 
 flask_student_app/
