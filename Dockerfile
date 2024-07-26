@@ -1,13 +1,17 @@
-FROM python:3.12-slim-bookworm
+# Using the official Python image from the Docker Hub
+FROM python:3.12-slim
 
+# Setting the working directory in the container
 WORKDIR /app
 
-COPY requirements.txt ./
+# Copying the requirements file into the container
+COPY requirements.txt .
 
+# Installing the dependencies
 RUN pip install -r requirements.txt
 
+# Copying the rest of the application code into the container
 COPY . .
 
-EXPOSE 4000
-
-CMD [ "flask", "run", "--host=0.0.0.0", "--port=4000"]
+# Specify the command to run the application
+CMD ["python", "app.py"]
