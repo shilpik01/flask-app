@@ -31,7 +31,8 @@ This project demonstrates how to deploy a simple web application using Docker co
 
    - Create a file named requirements.txt and add:
 
-           Flask==2.1.1
+           Flask==2.0.3
+           Werkzeug==2.0.3
 
 4. Building the Docker image
 
